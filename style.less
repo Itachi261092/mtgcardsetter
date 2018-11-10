@@ -1,0 +1,141 @@
+body{
+  margin: 0 auto;
+}
+section{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  &.form{
+    margin: 40px auto;
+    form{
+      height: 27px;
+    }
+
+    label,button{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    input{
+      width: 30%;
+      font-size: 20px;
+      border: 1px dashed red;
+      vertical-align: middle;
+    }
+
+    button.red{
+      height: 27px;
+      width: 27px;
+      //outline: 1px dashed red;
+      background: none;
+      border: none;
+      display: inline-block;
+      top: 0px;
+      vertical-align: middle;
+      background: url('red.png') 100% 100% no-repeat;
+      background-size: 100% 100%;
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+}
+.img-wrapper{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  img{
+    width: 100%;
+	  position: relative;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    display:none;
+    top: 10%;
+    left: 7%;
+    width: 86%;
+    height: 45.5%;
+    background: url(copy.png);
+    background-size: cover;
+    border-top-left-radius: 4.2% 65%;
+    border-top-right-radius: 4.2% 65%;
+    border-bottom-left-radius: 4.2% 57%;
+    border-bottom-right-radius: 4.2% 57%;
+  }
+  &.active:after{
+    display: block;
+  }
+}
+.lower-wrapper{
+  margin: 0 auto;
+  width: 250px;
+	overflow: hidden;
+}
+.copyrights{
+	background: #000;
+	color: #5cd648;
+	padding: 10px 30px;
+	border-radius: 5px;
+	margin: 10px auto;
+	width: 500px;
+    font-size: 15px;
+
+	span{
+		font-family: "Lucida Console";
+		display: block;
+		margin: 5px 0;
+	}
+
+	h1, a{
+		display: inline-block;
+	}
+
+	a.hide{
+		font-size: 2em;
+		padding: 0 20px;
+		color: #000;
+		text-decoration: none;
+		font-weight: 900;
+
+		&:hover{
+			color: #ff4848;
+		}
+	}
+
+    a.small{
+      color: #5cd648;
+      font-size: 0.8em;
+      text-decoration: none;
+      font-weight: 700;
+      opacity: 0.4;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+}
+.gb{
+  height: 27px;
+  width: 27px;
+  opacity: 0.6;
+  background: none;
+  border: none;
+  display: inline-block;
+  top: 0px;
+  vertical-align: middle;
+  background: url('green.png') 100% 100% no-repeat;
+  background-size: 100% 100%;
+
+  &:hover{
+    cursor: pointer;
+  }
+  &.active{
+    opacity: 1;
+  }
+}
